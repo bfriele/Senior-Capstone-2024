@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>New Meet</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <h2>New Meet</h2>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col">
+          <form onsubmit="createMeet(event)">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <!-- Location -->
+            <div class="form-group">
+              <label for="location">Location:</label>
+              <input type="text" id="location" name="location" required>
+            </div>
+            
+            <!-- Date -->
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="datetime-local" id="date" name="date" required>  
+            </div>
+        
+            <!-- Notes -->
+            <div class="form-group">
+              <label for="notes">Notes:</label>
+              <textarea id="notes" name="notes"></textarea>
+            </div>
+
+            <!-- Floor -->
+            <div class="form-group">
+              <label for="fx-score">Floor:</label>
+              <input type="number" step="0.1" id="fx-score" name="fx-score" required>
+            </div>
+
+            <!-- Pommels -->
+            <div class="form-group">
+              <label for="ph-score">Pommel Horse:</label>
+              <input type="number" step="0.1" id="ph-score" name="ph-score" required>
+            </div>
+
+            <!-- Rings -->
+            <div class="form-group">
+              <label for="sr-score">Rings:</label>
+              <input type="number" step="0.1" id="sr-score" name="sr-score" required>
+            </div>
+
+            <!-- Vault -->
+            <div class="form-group">
+              <label for="vt-score">Vault:</label>
+              <input type="number" step="0.1" id="vt-score" name="vt-score" required>
+            </div>
+
+            <!-- PBars -->
+            <div class="form-group">
+              <label for="pb-score">Parallel Bars:</label>
+              <input type="number" step="0.1" id="pb-score" name="pb-score" required>
+            </div>
+
+            <!-- HBar -->
+            <div class="form-group">
+              <label for="hb-score">High Bar:</label>
+              <input type="number" step="0.1" id="hb-score" name="hb-score" required>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Create Meet</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/meet.js"></script>
+  
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
